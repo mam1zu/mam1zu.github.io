@@ -1,4 +1,5 @@
 import {css} from "@emotion/react"
+import ghImage from "./github-mark.png";
 /** @jsxImportSource @emotion/react */
 
 const homeContainer = css`
@@ -8,6 +9,13 @@ const homeContainer = css`
 `
 const midashi = css`
   border-left: 3px solid greenyellow;
+  width: fit-content;      
+  background-color: oldlace;
+`
+
+const ghImageCss = css`
+        width:40px;
+        height:40px;
 `
 
 export const Home = () => {
@@ -23,7 +31,7 @@ export const Home = () => {
             最近は特に何もしてないです。やばいと思ったのでちょっと色々やってみたけど全然プログラミングわからないです。<br/>
             基本情報を午後試験のデータベース問題で0点を取って落ちたことがあります。<br/>
             <h2 css={midashi}>Github</h2>
-            <a href=""><img src="./github-mark.png"/></a>
+            <a href="https://github.com/Mamizu0312" target="_blank"><img src={ghImage} css={ghImageCss}/></a>
             <h2 css={midashi}>使用言語</h2>
             C, Java, HTML/CSS, JavaScript<br/>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

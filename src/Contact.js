@@ -1,4 +1,5 @@
 import {css} from "@emotion/react"
+/** @jsxImportSource @emotion/react */
 
 const homeContainer = css`
   margin: 0;
@@ -7,6 +8,8 @@ const homeContainer = css`
 `
 const midashi = css`
   border-left: 3px solid greenyellow;
+  width: fit-content;
+  background-color: oldlace;
 `
 
 export const Contact = () => {
