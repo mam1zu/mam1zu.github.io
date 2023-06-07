@@ -1,0 +1,69 @@
+header {
+    border-bottom: 1px solid grey;
+    margin-top: 12px;
+    padding: 0;
+}
+
+.logo {
+    font-size: 45px;
+    color: silver;
+    font-weight: bold;
+    font-family: Candara;
+    margin: 12px 48px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    background-color: darkturquoise;
+    margin: 0;
+    padding: 0px 48px;
+}
+
+.tab_focused {
+    cursor: pointer;
+    padding: 12px 12px;
+    color: white;
+    background-color: darkcyan;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 12px 12px;
+    color: white;
+    background-color: none;
+}
+
+footer {
+    padding: 30px;
+    color: white;
+    background-color: darkturquoise;
+    text-align: center;
+}
+
+.home_container {
+    margin: 0;
+    padding: 0 12px;
+    background-color: snow;
+}
+
+.midashi {
+    border-left: 3px solid greenyellow;
+    width: fit-content;
+    background-color: oldlace;
+}
+
+.midashi_link {
+    text-decoration: none;
+    color: black;
+}
+
+.midashi_link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gh_image {
+    width: 40px;
+    height: 40px;
+}
