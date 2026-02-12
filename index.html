@@ -1,82 +1,86 @@
 <!DOCTYPE html>
+
 <html>
-
     <head>
-        <link href="./style.css" rel="stylesheet"/>
-        <script type="text/javascript" src="./script.js"></script>
+        <link href="style.css" rel="stylesheet"/>
         <meta charset="utf-8" lang="ja"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
+    <script src="lib/jquery-4.0.0.min.js" ></script>
+    <script type="text/javascript" src="script.js"></script>
     <body>
-
-        <header>
-            <h4 class="logo">RESERVOIR</h4>
-            <ul class="menu">
-                <li class="tab_focused" id="home">ホーム</li>
-                <li class="tab" id="product">制作物</li>
-                <li class="tab" id="contact">連絡先</li>
-            </ul>
-        </header>
-
-        <div>
-
-            <div class="home">
-                <div id="home_container">
-                    <h2 class="midashi">こんにちは</h2>
-                    ここは貯水池です<br/>
-                    一度Reactで書いてみたけどこういうサイトで使うメリットがなかったので普通に書き直しました。<br/>
-                    <h2 class="midashi">自己紹介</h2>
-                    mam1zuです。大学で情報工学の勉強をしています。最近は人工知能の分野について取り組んでいます。<br/>
-                    個人的な趣味でネットワークやインフラ関係の勉強、Webアプリ開発などを行っています。<br/>
-                    <h2 class="midashi">github</h2>
-                    成果物は基本的にgithubにあげています。<br/>
-                    <a href="https://github.com/mam1zu" target="_blank"><img class="gh_image" src="./github-mark.png"></a>
-                    <h2 class="midashi">使用言語</h2>
-                    C++, Java, HTML/CSS, Javascript, PHP<br/>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                </div>
+        <div class="block-top">
+            <header>
+                <h1>CHOSUICHI</h1>
+            </header>
+            <div class="about-me">
+                <h2>Hello!</h2>
+                Welcome to mam1zu's site, or the CHOSUICHI(貯水池).
+                <h2>About me</h2>
+                <ul>
+                    <li>Name: mam1zu</li>
+                    <li>Location: Chiba, Japan</li>
+                    <li>Birth date: December 30th, 2003 (22yo)</li>
+                    <li>Occupation: university student (at Chiba Institute of Technology), gimme some job</li>
+                    <li>Hobby: programming, studying English, playing video games with friends</li>
+                    <li>Interested fields: Cybersecurity, Networking, AI</li>
+                    <li>Languages: Japanese(native), English(basic)</li>
+                </ul>
             </div>
-    
-            <div class="product" hidden="hidden">
-                <div class="home_container">
-                    <h2 class="midashi"><a class="midashi_link" href="https://github.com/McOrgAuth" target="_blank">CITAUTH</a></h2>
-                    使用言語: Javascript, Java, PHP<br/>
-                    使用ミドルウェア: Express<br/>
-                    データベース: MySQL<br/>
-                    マインクラフトのホワイトリストをサーバ間で共有するシステムです。<br/>
-                    WEB, API, AUTH_SERVER, SYS, MC-PLUGINの5つのコンポーネントから構成されています。詳細は<a href="https://zenn.dev/mam1zu/articles/e9877491c39e00" target="_blank">Zennの記事に</a><br/>
-                    <h2 class="midashi"><a class="midashi_link" href="https://github.com/mam1zu/greyscale-transform" target="_blank">greyscale-transform</a></h2>
-                    使用言語: Javascript<br/>
-                    ウェブアプリケーションです。フロントエンドはReact, バックエンドはExpressで実装しました。<br/>
-                    pngファイルやjpegファイルをアップロードするとモノクロ化してくれます。<br/>
-                    <h2 class="midashi"><a class="midashi_link" href="https://github.com/mam1zu/SimpleSpawn" target="_blank">SimpleSpawn</a></h2>
-                    使用言語: Java<br>
-                    Minecraftのプラグインです。/setspwanコマンドでspawnpointを指定して, /spawnコマンドで<br>
-                    飛べます。５年ぐらい更新していないので最新版では動きません。<br>
-                    <h2 class="midashi"><a class="midashi_link" href="https://github.com/mam1zu/DropProbability" target="_blank">DropProbability</a></h2>
-                    使用言語:Java<br>
-                    Minecraftのプラグインです。これが一番最近作ったプラグインです。<br>
-                    ブロック破壊時におけるアイテムのドロップ率を調整できるプラグインです。対応バージョンは1.19.2, 1.18.2です。<br>
-                    <h2 class="midashi"><a class="midashi_link" href="https://github.com/mam1zu/TCPChat" target="_blank">TCPChat</a></h2>
-                    使用言語:Python<br>
-                    CUIのプログラムです。クライアントサーバ方式のチャットアプリです。<br>
-                    最低限の機能しかついてない上に作りかけのままなので産業廃棄物です。<br>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                </div>
-            </div>
-        
-            <div class="contact" hidden="hidden">
-                <div class="home_container">
-                    <h2 class="midashi">連絡先</h2>
-                    <a href="https://twitter.com/_Mamizu">twitter:@_Mamizu</a>
-                    <br/><br/><br/><br/><br/>
-                </div>
+            <div class="links">
+                <h2>Links</h2>
+                <a target="_blank" href="https://x.com/_Mamizu" rel="twitter"><img src="images/x-logo-black.png" width="64" height="64"/></a>
+                <a target="_blank" href="https://misskey.io/@mmz" rel="misskeyio"><img src="images/misskeyio-logo-64.png" width="64" height="64"/></a>
+                <a target="_blank" href="https://github.com/mam1zu" rel="github"><img src="images/github-mark.png" width="64" height="64"/></a>
+                <a target="_blank" href="https://zenn.dev/mam1zu" rel="zenn"><img src="images/zenn-logo-only.svg" width="64" height="64"/></a>
             </div>
         </div>
-        <footer>
-            @2022-2025 mam1zu
-        </footer>
-        
-    </body>
 
+        <div class="main">
+
+            <div class="block-left">
+                <div class="stack">
+                    <h2>- Tech stack - </h2>
+                    <h3>Programming Language</h3>
+                    <span>C, Java, JavaScript, HTML, CSS, PHP, Python</span>
+                    <h3>middleware</h3>
+                    <span>Node.js</span>
+                    <h3>Infrastructure</h3>
+                    <span>On-premise, Proxmox VE, Docker</span>
+                    <h3>Other</h3>
+                    <span>Git, GitHub</span>
+                </div>
+            </div>
+
+            <div class="block-right">
+                <div class="products">
+                    <h2> - Products - </h2>
+                    <h3>CITAUTH <a target="_blank" href="https://github.com/McOrgAuth"><img src="./images/github-mark.png" width="20" height="20"/></a> <a target="_blank" href="https://zenn.dev/mam1zu/articles/e9877491c39e00"><img src="./images/zenn-logo-only.svg" width="20" height="20"/></a></h3>
+                    A whitelist-sharing system between multiple minecraft servers. 
+                    <h3>CBOW-COM <a target="_blank" href="https://github.com/mam1zu/CBOW-COM"><img src="./images/github-mark.png" width="20" height="20"></a></h3>
+                    A static word embedding method, based on Word2Vec(CBOW)
+                    <br/>
+                    <br/>...and more on github!
+                </div>
+                <div class="contest">
+                    <h2>Contest Results</h2>
+                    <ul>
+                        <li>Ministry of Defense Cyber Contest 2026: 79th(Student, Team)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            ©2022-2026 mam1zu. All rights reserved.
+        </div>
+        <script>$(()=>{})</script>
+        <!-- 
+        　 ∧＿∧
+        　（　 ´∀｀）あたたか手作りホームページ 貯水池(RESERVOIR)
+        　ﾉ　 ｀∽)  (c) 2022-2026 mam1zu. All rights reserved.
+        （_　⌒)⌒)
+         -->
+    </body>
 </html>
